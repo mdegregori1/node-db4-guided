@@ -5,6 +5,11 @@ const db = require('./data/db-config.js');
 
 const server = express();
 
+server.get('/', (req, res) => {
+  res.send(`<h2>TestDB3!</h2>`);
+});
+
+
 server.use(helmet());
 server.use(express.json());
 
